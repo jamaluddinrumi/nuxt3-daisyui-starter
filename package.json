@@ -10,6 +10,7 @@
     "postinstall": "nuxi prepare"
   },
   "devDependencies": {
+    "@fontsource/inter-tight": "^4.5.0",
     "@nuxtjs/eslint-config": "^12.0.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/tailwindcss": "^6.1.3",

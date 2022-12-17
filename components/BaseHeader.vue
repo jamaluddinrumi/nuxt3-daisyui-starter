@@ -6,6 +6,7 @@
       </NuxtLink>
     </div>
     <div class="flex-none">
+      <ThemeSelector />
       <div class="dropdown dropdown-bottom dropdown-end">
         <label tabindex="0" class="btn btn-square btn-ghost">
           <Icon name="healthicons:ui-menu-grid" class="w-5 h-5" />

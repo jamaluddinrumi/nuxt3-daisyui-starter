@@ -4,4 +4,5 @@
   </Head>
   <Header />
   <NuxtPage />
+  <Footer />
 </template>

@@ -2,7 +2,7 @@
   <Head>
     <Title>Nuxt 3 + Daisy UI Starter Template</Title>
   </Head>
-  <Header />
+  <BaseHeader />
   <NuxtPage />
-  <Footer />
+  <BaseFooter />
 </template>

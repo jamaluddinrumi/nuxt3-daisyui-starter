@@ -1,8 +1,8 @@
 <template>
   <div class="navbar bg-base-100">
     <div class="flex-1">
-      <NuxtLink to="/" class="btn btn-ghost normal-case text-xl">
-        Nuxt 3 + Daisy UI
+      <NuxtLink to="/" class="btn btn-ghost normal-case">
+        <span class="text-xl font-bold">Nuxt 3 + Daisy UI</span>
       </NuxtLink>
     </div>
     <div class="flex-none">

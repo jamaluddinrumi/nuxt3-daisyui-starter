@@ -10,6 +10,7 @@ specifiers:
   '@tailwindcss/forms': ^0.5.3
   '@tailwindcss/line-clamp': ^0.4.2
   '@tailwindcss/typography': ^0.5.8
+  '@volar-plugins/eslint': ^0.0.4
   chalk: 4.1.2
   daisyui: ^2.45.0
   eslint: ^8.30.0
@@ -18,6 +19,7 @@ specifiers:
   nuxt-icon: ^0.1.8
   pnpm: ^7.18.2
   prettier: ^2.8.1
+  prettier-plugin-tailwindcss: ^0.2.1
   theme-change: ^2.2.0
   typescript: ^4.9.4
 
@@ -31,6 +33,7 @@ devDependencies:
   '@tailwindcss/forms': 0.5.3
   '@tailwindcss/line-clamp': 0.4.2
   '@tailwindcss/typography': 0.5.8
+  '@volar-plugins/eslint': 0.0.4_eslint@8.30.0
   chalk: 4.1.2
   daisyui: 2.45.0
   eslint: 8.30.0
@@ -39,6 +42,7 @@ devDependencies:
   nuxt-icon: 0.1.8
   pnpm: 7.18.2
   prettier: 2.8.1
+  prettier-plugin-tailwindcss: 0.2.1_prettier@2.8.1
   theme-change: 2.2.0
   typescript: 4.9.4
 
@@ -1268,6 +1272,22 @@ packages:
     dependencies:
       vite: 3.2.5
       vue: 3.2.45
+    dev: true
+
+  /@volar-plugins/eslint/0.0.4_eslint@8.30.0:
+    resolution: {integrity: sha512-CjvOHSPOyfMv4mgjFk0JOsnq0yWj4LaHb7n4bjNWqqhdwPWmaUEK5AbOloBRxix0736Z3OimH8GMjHNlMcbeiw==}
+    peerDependencies:
+      eslint: '*'
+    dependencies:
+      '@volar/shared': 1.0.16
+      eslint: 8.30.0
+    dev: true
+
+  /@volar/shared/1.0.16:
+    resolution: {integrity: sha512-Lj9j3OiLHZVw9QL47C6cz5JkKJyV9j2/20ma7TBUIdEGgihEIqWFss9cFvlmKw0iyjhMIhdL85fEgkjh4I/Y+g==}
+    dependencies:
+      typesafe-path: 0.2.2
+      vscode-uri: 3.0.7
     dev: true
 
   /@vue/babel-helper-vue-transform-on/1.0.2:
@@ -5659,6 +5679,15 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
+  /prettier-plugin-tailwindcss/0.2.1_prettier@2.8.1:
+    resolution: {integrity: sha512-aIO8IguumORyRsmT+E7JfJ3A9FEoyhqZR7Au7TBOege3VZkgMvHJMkufeYp4zjnDK2iq4ktkvGMNOQR9T8lisQ==}
+    engines: {node: '>=12.17.0'}
+    peerDependencies:
+      prettier: '>=2.2.0'
+    dependencies:
+      prettier: 2.8.1
+    dev: true
+
   /prettier/2.8.1:
     resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}
     engines: {node: '>=10.13.0'}
@@ -6526,6 +6555,10 @@ packages:
     dependencies:
       media-typer: 0.3.0
       mime-types: 2.1.35
+    dev: true
+
+  /typesafe-path/0.2.2:
+    resolution: {integrity: sha512-OJabfkAg1WLZSqJAJ0Z6Sdt3utnbzr/jh+NAHoyWHJe8CMSy79Gm085094M9nvTPy22KzTVn5Zq5mbapCI/hPA==}
     dev: true
 
   /typescript/4.9.4:

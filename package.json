@@ -1,6 +1,5 @@
 {
   "version": "1.0.0",
-  "type": "module",
   "private": true,
   "scripts": {
     "build": "nuxi build",
@@ -9,7 +8,7 @@
     "preview": "nuxi preview",
     "postinstall": "nuxi prepare",
     "lint": "npx pnpm exec eslint --ext .ts,.js,.vue --fix .",
-    "format": "npx pnpm exec prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json|vue)\""
+    "format": "npx pnpm exec prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json|vue|md|*rc)\""
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
@@ -21,6 +20,7 @@
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.8",
+    "@volar-plugins/eslint": "^0.0.4",
     "chalk": "4.1.2",
     "daisyui": "^2.45.0",
     "eslint": "^8.30.0",
@@ -29,6 +29,7 @@
     "nuxt-icon": "^0.1.8",
     "pnpm": "^7.18.2",
     "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.1",
     "theme-change": "^2.2.0",
     "typescript": "^4.9.4"
   }

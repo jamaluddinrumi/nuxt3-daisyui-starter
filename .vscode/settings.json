@@ -5,6 +5,10 @@
     "source.fixAll.eslint": true
   },
   "prettier.enable": true,
-  "eslint.packageManager": "pnpm",
-  "eslint.alwaysShowStatus": true
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.scss": "tailwindcss"
+  },
 }

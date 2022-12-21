@@ -1,29 +1,25 @@
 <template>
   <div class="navbar bg-base-100">
     <div class="flex-1">
-      <NuxtLink to="/" class="btn btn-ghost normal-case">
+      <NuxtLink to="/" class="btn-ghost btn normal-case">
         <span class="text-xl font-bold">Nuxt 3 + Daisy UI</span>
       </NuxtLink>
     </div>
     <div class="flex-none">
       <ThemeSelector />
-      <div class="dropdown dropdown-bottom dropdown-end">
-        <label tabindex="0" class="btn btn-square btn-ghost">
-          <Icon name="healthicons:ui-menu-grid" class="w-5 h-5" />
+      <div class="dropdown-bottom dropdown-end dropdown">
+        <label tabindex="0" class="btn-ghost btn-square btn">
+          <Icon name="healthicons:ui-menu-grid" class="h-5 w-5" />
         </label>
         <ul
           tabindex="0"
-          class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+          class="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
         >
           <li>
-            <NuxtLink to="/">
-              Home
-            </NuxtLink>
+            <NuxtLink to="/"> Home </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/about">
-              About
-            </NuxtLink>
+            <NuxtLink to="/about"> About </NuxtLink>
           </li>
         </ul>
       </div>

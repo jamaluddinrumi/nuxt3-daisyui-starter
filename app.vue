@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import '@fontsource/inter-tight/100.css'
-import '@fontsource/inter-tight/400.css'
-import '@fontsource/inter-tight/400-italic.css'
-import '@fontsource/inter-tight/700.css'
-import '@fontsource/inter-tight/900.css'
+import "@fontsource/inter-tight/100.css";
+import "@fontsource/inter-tight/400.css";
+import "@fontsource/inter-tight/400-italic.css";
+import "@fontsource/inter-tight/700.css";
+import "@fontsource/inter-tight/900.css";
 </script>
 
 <template>

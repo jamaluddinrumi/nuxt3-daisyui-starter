@@ -7,7 +7,7 @@
     "generate": "nuxi generate",
     "preview": "nuxi preview",
     "postinstall": "nuxi prepare",
-    "lint": "npx pnpm exec eslint --ext .ts,.js,.vue --fix .",
+    "lint": "npx pnpm exec eslint --ext .js,.ts,.json,.vue,.md --fix .",
     "format": "npx pnpm exec prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json|vue|md|*rc)\""
   },
   "devDependencies": {
@@ -16,11 +16,13 @@
     "@nuxtjs/eslint-config": "^12.0.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/tailwindcss": "^6.2.0",
+    "@storyblok/nuxt": "^4.6.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.8",
     "@volar-plugins/eslint": "^0.0.4",
+    "axios": "^0.27.2",
     "chalk": "5.2.0",
     "daisyui": "^2.46.0",
     "eslint": "^8.30.0",

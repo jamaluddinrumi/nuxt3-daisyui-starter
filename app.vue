@@ -11,11 +11,13 @@ import "@fontsource/inter-tight/900.css";
     <Title>Nuxt 3 + Daisy UI Starter Template</Title>
   </Head>
   <BaseHeader />
-  <NuxtPage />
+  <div class="lg:container lg:mx-auto">
+    <NuxtPage />
+  </div>
   <BaseFooter />
 </template>
 
-<style>
+<style lang="scss">
 body {
   font-family: "Inter Tight", sans-serif;
 }

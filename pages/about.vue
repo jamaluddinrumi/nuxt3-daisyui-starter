@@ -1,3 +1,3 @@
 <template>
-  <div class="min-h-[calc(100vh/2)]">about</div>
+  <div class="grid min-h-[calc(100vh/2)] place-content-center">about</div>
 </template>

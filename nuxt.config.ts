@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "@nuxt/image-edge",
     "@nuxtjs/tailwindcss",
     "nuxt-icon",
+    "nuxt-icons",
   ],
   storyblok: { accessToken: "ae7No8GPaQ2mzyt2r0rjoQtt" },
   image: {

@@ -20,6 +20,7 @@ specifiers:
   eslint-config-prettier: ^8.5.0
   nuxt: 3.0.0
   nuxt-icon: ^0.1.8
+  nuxt-icons: ^3.0.0
   pnpm: ^7.19.0
   prettier: ^2.8.1
   prettier-plugin-tailwindcss: ^0.2.1
@@ -47,6 +48,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.30.0
   nuxt: 3.0.0_pwpk577hwtuwgvziewj6f5zxl4
   nuxt-icon: 0.1.8
+  nuxt-icons: 3.0.0
   pnpm: 7.19.0
   prettier: 2.8.1
   prettier-plugin-tailwindcss: 0.2.1_prettier@2.8.1
@@ -4992,6 +4994,15 @@ packages:
       - rollup
       - supports-color
       - vue
+    dev: true
+
+  /nuxt-icons/3.0.0:
+    resolution: {integrity: sha512-7F9/uug7T23d2IGsmz0Jyi4gw86HRZeuzfxC1+e5vsAfQ4MhUMRaANki+uDgiUWub1y5TsclxptG06EH1e3bRQ==}
+    dependencies:
+      '@nuxt/kit': 3.0.0
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /nuxt/3.0.0_pwpk577hwtuwgvziewj6f5zxl4:

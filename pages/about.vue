@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+const story = await useAsyncStoryblok('about', { version: 'draft' });
+</script>
+
 <template>
-  <div class="grid min-h-[calc(100vh/2)] place-content-center">about</div>
+  <StoryblokComponent v-if="story" :blok="story.content" />
 </template>

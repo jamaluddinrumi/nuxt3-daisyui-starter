@@ -1,15 +1,7 @@
+<script lang="ts" setup>
+const story = await useAsyncStoryblok('homepage', { version: 'draft' });
+</script>
+
 <template>
-  <article class="prose mx-auto lg:prose-lg">
-    <h1>Kuda lumping bread with cheese: What the science tells us</h1>
-    <p>
-      For years parents have espoused the health benefits of eating garlic bread
-      with cheese to their children, with the food earning such an iconic status
-      in our culture that kids will often dress up as warm, cheesy loaf for
-      Halloween.
-    </p>
-    <p>
-      But a recent study shows that the celebrated appetizer may be linked to a
-      series of rabies cases springing up around the country.
-    </p>
-  </article>
+  <StoryblokComponent v-if="story" :blok="story.content" />
 </template>

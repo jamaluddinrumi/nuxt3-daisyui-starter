@@ -8,7 +8,8 @@
     "preview": "nuxi preview",
     "postinstall": "nuxi prepare",
     "lint": "npx pnpm exec eslint --ext .js,.ts,.json,.vue,.md --fix .",
-    "format": "npx pnpm exec prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json|vue|md|*rc)\""
+    "format": "npx pnpm exec prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json|vue|md|*rc)\"",
+    "format-watch": "npx pnpm exec onchange \"**/*\" -- npx pnpm exec prettier --ignore-path .gitignore --write --ignore-unknown {{changed}}"
   },
   "devDependencies": {
     "@fontsource/inter-tight": "^4.5.0",
@@ -32,6 +33,7 @@
     "nuxt": "3.0.0",
     "nuxt-icon": "^0.1.8",
     "nuxt-icons": "^3.0.0",
+    "onchange": "^7.1.0",
     "pnpm": "^7.19.0",
     "prettier": "^2.8.1",
     "prettier-plugin-tailwindcss": "^0.2.1",

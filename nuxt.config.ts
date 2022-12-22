@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     "@storyblok/nuxt",
     "@nuxt/image-edge",
     "@nuxtjs/tailwindcss",
+    "@vueuse/nuxt",
     "nuxt-icon",
     "nuxt-icons",
   ],

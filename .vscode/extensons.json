@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "antfu.file-nesting",
+    "antfu.iconify",
+    "antfu.icons-carbon",
+    "antfu.theme-vitesse",
+    "bradlc.vscode-tailwindcss",
+    "EditorConfig.EditorConfig",
+    "file-icons.file-icons",
+    "redhat.vscode-xml",
+    "vscode-icons-team.vscode-icons",
+    "znck.vu"
+  ]
+}

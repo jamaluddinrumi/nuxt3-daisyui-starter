@@ -12,6 +12,7 @@
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss06', 'zero'",
 
   // Editor
+  "editor.minimap.showSlider": "always",
   "editor.accessibilitySupport": "off",
   "editor.cursorSmoothCaretAnimation": true,
   "editor.find.addExtraSpaceOnTop": false,
@@ -83,6 +84,14 @@
     "*.css": "tailwindcss",
     "*.scss": "tailwindcss"
   },
+  "tailwindCSS.files.exclude": [
+    "**/.git/**",
+    "**/node_modules/**",
+    "**/.hg/**",
+    "**/.svn/**",
++   "**/.nuxt/**"
+  ],
+  "tailwindCSS.emmetCompletions": true,
   "iconify.annotations": true,
   "iconify.inplace": true,
 

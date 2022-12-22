@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 export default <Config>{
   content: [
@@ -16,4 +16,4 @@ export default <Config>{
     require("@tailwindcss/aspect-ratio"),
     require("daisyui"),
   ],
-}
+};

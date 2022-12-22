@@ -13,7 +13,7 @@
         </label>
         <ul
           tabindex="0"
-          class="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
+          class="dropdown-content menu rounded-box bg-base-100 w-52 p-2 shadow"
         >
           <li>
             <NuxtLink to="/"> Home </NuxtLink>

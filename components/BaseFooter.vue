@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer bg-base-200 p-10 text-base-content">
+  <footer class="footer bg-base-200 text-base-content p-10">
     <div>
       <span class="footer-title">Services</span>
       <NuxtLink to="/" class="link-hover link">Halaman Depan</NuxtLink>
@@ -22,7 +22,7 @@
     </div>
   </footer>
   <footer
-    class="footer border-t border-base-300 bg-base-200 px-10 py-4 text-base-content"
+    class="footer border-base-300 bg-base-200 text-base-content border-t px-10 py-4"
   >
     <div class="grid-flow-col items-center">
       <svg

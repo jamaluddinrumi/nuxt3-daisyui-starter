@@ -89,7 +89,7 @@
     "**/node_modules/**",
     "**/.hg/**",
     "**/.svn/**",
-+   "**/.nuxt/**"
+    "**/.nuxt/**"
   ],
   "tailwindCSS.emmetCompletions": true,
   "iconify.annotations": true,

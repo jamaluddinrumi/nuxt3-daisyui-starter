@@ -1,14 +1,14 @@
 <script setup>
-const storyblokApi = useStoryblokApi()
-const { data } = await storyblokApi.get('cdn/stories/header', {
-  version: 'draft',
-  resolve_links: 'url',
-})
+const storyblokApi = useStoryblokApi();
+const { data } = await storyblokApi.get("cdn/stories/header", {
+  version: "draft",
+  resolve_links: "url",
+});
 const content = data.story.content;
 const logo = content.logo;
 const menu = content.menu;
 </script>
- 
+
 <template>
   <div class="navbar bg-base-100">
     <div class="flex-1">
@@ -24,7 +24,7 @@ const menu = content.menu;
         </label>
         <ul
           tabindex="0"
-          class="dropdown-content menu rounded-box bg-base-100 w-52 p-2 shadow"
+          class="dropdown-content menu rounded-box w-52 bg-base-100 p-2 shadow"
         >
           <li v-for="menuItem in menu">
             <template v-if="menuItem.link_item.linktype === 'story'">
@@ -33,7 +33,10 @@ const menu = content.menu;
               </NuxtLink>
             </template>
             <template v-if="menuItem.link_item.linktype === 'url'">
-              <NuxtLink :to="menuItem.link_item.url" :target="menuItem.link_item.target">
+              <NuxtLink
+                :to="menuItem.link_item.url"
+                :target="menuItem.link_item.target"
+              >
                 {{ menuItem.link_item.title }}
               </NuxtLink>
             </template>

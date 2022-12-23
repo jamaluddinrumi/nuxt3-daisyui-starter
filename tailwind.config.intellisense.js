@@ -15,4 +15,4 @@ module.exports = {
     require("@tailwindcss/aspect-ratio"),
     // require("daisyui"), daisyui not ready yet
   ],
-}
+};

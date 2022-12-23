@@ -13,7 +13,6 @@ export default defineNuxtConfig({
     },
   },
   extends: ["nuxt-seo-kit"],
-  linkChecker: { failOn404: false },
   modules: [
     "@storyblok/nuxt",
     "@nuxt/image-edge",

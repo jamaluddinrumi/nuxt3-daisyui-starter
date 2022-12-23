@@ -20,7 +20,11 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "nuxt-icons",
   ],
-  storyblok: { accessToken: process.env.STORYBLOK_ACCESS_TOKEN },
+  storyblok: {
+    accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
+    useApiClient: true,
+    apiOptions: { cache: { type: "memory" } },
+  },
   image: {
     provider: "storyblok",
     storyblok: {

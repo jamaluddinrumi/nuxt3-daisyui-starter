@@ -1,5 +1,4 @@
 <script setup>
-const story = ref(null);
 const storyblokApi = useStoryblokApi()
 const { data } = await storyblokApi.get('cdn/stories/header', {
   version: 'draft',

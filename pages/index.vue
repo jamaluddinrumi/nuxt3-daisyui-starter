@@ -1,12 +1,11 @@
 <script lang="ts" setup>
-const story = await useAsyncStoryblok("homepage", { version: "draft" });
+const story = await useAsyncStoryblok("home", { version: "draft" });
 </script>
 
 <template>
+  <Head>
+    <Title>{{ story.content.meta.title }}</Title>
+    <Meta name="description" :content="story.content.meta.description" />
+  </Head>
   <StoryblokComponent v-if="story" :blok="story.content" />
-  <NuxtPicture
-    class="flex justify-center"
-    src="https://a.storyblok.com/f/136623/2096x3724/fa67947384/lucu.jpeg"
-    :modifiers="{ filters: { rotate: 270 } }"
-  />
 </template>

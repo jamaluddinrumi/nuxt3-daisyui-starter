@@ -7,9 +7,6 @@ import "@fontsource/inter-tight/900.css";
 </script>
 
 <template>
-  <Head>
-    <Title>Nuxt 3 + Daisy UI Starter Template</Title>
-  </Head>
   <SeoKit />
   <OgImageScreenshot />
   <BaseHeader />

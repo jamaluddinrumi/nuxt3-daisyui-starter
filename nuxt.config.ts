@@ -1,4 +1,5 @@
 import { defineNuxtConfig } from "nuxt/config";
+import { apiPlugin } from "@storyblok/vue";
 
 export default defineNuxtConfig({
   runtimeConfig: {
@@ -22,7 +23,7 @@ export default defineNuxtConfig({
   ],
   storyblok: {
     accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
-    useApiClient: true,
+    use: [apiPlugin],
     apiOptions: { cache: { type: "memory" } },
   },
   image: {

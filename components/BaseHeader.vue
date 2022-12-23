@@ -1,4 +1,6 @@
 <script setup>
+import { useColorMode } from "@vueuse/core";
+
 const storyblokApi = useStoryblokApi();
 const { data } = await storyblokApi.get("cdn/stories/header", {
   version: "draft",
@@ -7,13 +9,20 @@ const { data } = await storyblokApi.get("cdn/stories/header", {
 const content = data.story.content;
 const logo = content.logo;
 const menu = content.menu;
+const title = content.title;
+
+const mode = useColorMode();
+const config = useRuntimeConfig();
 </script>
 
 <template>
   <div class="navbar bg-base-100">
     <div class="flex-1">
       <NuxtLink to="/" class="btn-ghost btn normal-case">
-        <NuxtImg :src="logo" />
+        <NuxtImg sizes="lg:36px" :src="logo" />
+        <span class="ml-2 text-2xl font-bold">
+          {{ title }}
+        </span>
       </NuxtLink>
     </div>
     <div class="flex-none">

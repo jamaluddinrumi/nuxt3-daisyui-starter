@@ -3,7 +3,7 @@
     <div>
       <span class="footer-title">Services</span>
       <NuxtLink to="/" class="link-hover link">Halaman Depan</NuxtLink>
-      <NuxtLink to="/about" class="link-hover link">Tentang Kami</NuxtLink>
+      <NuxtLink to="/about/" class="link-hover link">Tentang Kami</NuxtLink>
       <NuxtLink class="link-hover link">Marketing</NuxtLink>
       <NuxtLink class="link-hover link">Advertisement</NuxtLink>
     </div>

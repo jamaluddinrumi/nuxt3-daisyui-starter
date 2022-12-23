@@ -169,5 +169,6 @@
   "emmet.includeLanguages": {
     "vue": "html",
     "javascript": "javascriptreact"
-  }
+  },
+  "tailwindCSS.experimental.configFile": "tailwind.config.intellisense.js"
 }
